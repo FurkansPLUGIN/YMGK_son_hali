@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Asama2.AnaSayfa.master">
+    
+    <yummy:PancakeView BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="0,1" 
+                                        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   
+                            >
+        <yummy:PancakeView.BackgroundGradientStops>
+            <yummy:GradientStopCollection>
+                <yummy:GradientStop Color="#6495ED	" Offset="0.01" />
+                <yummy:GradientStop Color="#6495ED	" Offset="0.25" />
+                <yummy:GradientStop Color="#6495ED	" Offset="0.5" />
+                <yummy:GradientStop Color="#6495ED	" Offset="1" />
+            </yummy:GradientStopCollection>
+        </yummy:PancakeView.BackgroundGradientStops>
+
+        <Frame BackgroundColor="#0000" x:Name="stackBilgi">
+            <ScrollView>
+
+
+                <Grid VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="#0000">
+                        <Label Text="MoonBow" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Bilbo" FontSize="40"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                    </Frame>
+                    <Frame Grid.Column="0" Grid.Row="1" BackgroundColor="#0000">
+                        <StackLayout>
+                            <Label Text="Public Key: ID34354523" TextColor="white"
+                               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               FontAttributes="Bold" FontSize="20" FontFamily="Oswald"></Label>
+                        </StackLayout>
+                    </Frame>
+                    
+                    <Frame Grid.Column="0" Grid.Row="2" HasShadow="True" BackgroundColor="#0000" CornerRadius="10">
+                        <StackLayout  Spacing="10">
+                            <Button Text="Veri Ekle" BackgroundColor="#87CEFA	" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" HeightRequest="70"
+                                 x:Name="btnPost" TextColor="#F8F8FF" Clicked="btnPost_Clicked" ></Button>
+
+                            <Button Text="Anket" BackgroundColor="#87CEFA	" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" HeightRequest="70"
+                                 x:Name="btnAnket" TextColor="#F8F8FF" Clicked="btnAnket_Clicked"></Button>
+
+                            <Button Text="Hesabı Kaldır" BackgroundColor="#87CEFA	" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" HeightRequest="70"
+                                 x:Name="btnKaldır" TextColor="#F8F8FF" Clicked="btnKaldır_Clicked"></Button>
+
+                            <Button Text="Hesap Bilgileri" BackgroundColor="#87CEFA	" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" HeightRequest="70"
+                                 x:Name="btnHesapBlg" TextColor="#F8F8FF" Clicked="btnHesapBlg_Clicked"></Button>
+
+                            <Label Text="Public key ile verilerinizi güvenle paylaşabilirsiniz" TextColor="white"
+                               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               FontAttributes="Bold" FontSize="20" FontFamily="Oswald"></Label>
+
+                        </StackLayout>
+                    </Frame>
+
+                </Grid>
+            </ScrollView>
+        </Frame>
+    </yummy:PancakeView>
+</ContentPage>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Asama2.KayıtVeLogin.Giris">
+    
+    <yummy:PancakeView BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="0,1" 
+                                        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   
+                          >
+        <yummy:PancakeView.BackgroundGradientStops>
+            <yummy:GradientStopCollection>
+                <yummy:GradientStop Color="#6495ED" Offset="0.01" />
+                <yummy:GradientStop Color="#6495ED" Offset="0.25" />
+                <yummy:GradientStop Color="#6495ED" Offset="0.5" />
+                <yummy:GradientStop Color="#6495ED" Offset="1" />
+            </yummy:GradientStopCollection>
+        </yummy:PancakeView.BackgroundGradientStops>
+
+        <Frame BackgroundColor="#0000">
+            <ScrollView>
+                
+         
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                   
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="#0000">
+
+                   
+                   
+                    <StackLayout>
+                        <Label Text="GIRIS" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold"
+                               FontSize="40"  FontFamily="Bilbo" TextColor="#F8F8FF"></Label>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame Grid.Column="0" Grid.Row="1" HasShadow="True" BackgroundColor="#0000" CornerRadius="10">
+                    <StackLayout>
+                        <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                            <Entry  Placeholder="E- posta" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0"
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entrPosta"></Entry>
+                        </Frame>
+                        <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                            <Entry  Placeholder="Şifre:" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0"
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entrSifre"></Entry>
+
+                        </Frame>
+                        
+                       
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Column="0" Grid.Row="2" BackgroundColor="#0000">
+                    <StackLayout Spacing="50">
+                        <Button Text="giriş" BackgroundColor="#87CEFA" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" TextColor="#F8F8FF"
+                                 x:Name="btnGiris" HeightRequest="80"  Clicked="btnGiris_Clicked"></Button>
+
+                            <Label Text="VEYA" TextColor="#C0C0C0" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"  FontFamily="Oswald"></Label>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame Grid.Column="0" Grid.Row="3" BackgroundColor="#0000">
+                    <StackLayout>
+                            <Button Text="biyometrik Giriş" BackgroundColor="#1E90FF" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" TextColor="#F8F8FF"
+                                  x:Name="btnBioGiris" HeightRequest="80" Clicked="btnBioGiris_Clicked"></Button>
+                    </StackLayout>
+                </Frame>
+
+               <!--    
+                <Frame Grid.Column="0" Grid.Row="4" BackgroundColor="#0000">
+                    <StackLayout Orientation="Horizontal">
+                            <Frame BackgroundColor="#0000" HorizontalOptions="Start">
+                                <Label Text="Hesap Kurtarma" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#F8F8FF"
+                               FontSize="20"  FontFamily="Oswald" x:Name="lblHesabıKurtar"></Label>
+
+                            </Frame>
+                            <Frame BackgroundColor="#0000" HorizontalOptions="EndAndExpand">  
+                                <Label Text="Hesap Bilgileri" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#F8F8FF"
+                               FontSize="20"  FontFamily="Oswald" x:Name="lblHesabAc"></Label>
+                            </Frame>
+                      
+                    </StackLayout>
+                </Frame>
+                 -->
+
+                </Grid>
+
+            </ScrollView>
+        </Frame>
+    </yummy:PancakeView>
+</ContentPage>

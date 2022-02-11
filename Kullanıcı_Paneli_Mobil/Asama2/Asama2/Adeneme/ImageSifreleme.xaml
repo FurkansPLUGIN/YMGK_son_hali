@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asama2.Adeneme.ImageSifreleme">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="yeniFatihLogo.PNG" x:Name="img" Aspect="AspectFill" HeightRequest="300"></Image>
+            <Image  x:Name="img2" Aspect="AspectFill" HeightRequest="300"></Image>
+            <Button Text="sifrele" x:Name="sifrele" Clicked="sifrele_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

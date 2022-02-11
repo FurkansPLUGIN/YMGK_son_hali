@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asama2.AyarSayfaları.hesapBilgi">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#6495ED">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <ScrollView>
+                    <StackLayout Margin="30" Spacing="40">
+
+
+                        <StackLayout Grid.Column="0" Grid.Row="0">
+                            <Label Text="HESAP BİLGİLERİ" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Oswald" FontSize="30"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="1">
+                            <Label Text="İsim Soyisim:" VerticalTextAlignment="Center"
+                           FontFamily="Oswald" FontSize="17" x:Name="adSoy"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                            <Label Text="E- posta:" VerticalTextAlignment="Center"
+                           FontFamily="Oswald" FontSize="17" x:Name="posta"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                            <Label Text="Doğum tarihi:" VerticalTextAlignment="Center"
+                           FontFamily="Oswald" FontSize="17" x:Name="dTarih"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                            <Label Text="Doğrulama Kodu" VerticalTextAlignment="Center"
+                           FontFamily="Oswald" FontSize="17" x:Name="Dkod"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                            <Label Text="Şifre" VerticalTextAlignment="Center"
+                           FontFamily="Oswald" FontSize="17" x:Name="sifre"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                            <Label Text="Güvenlik Sorusu:" VerticalTextAlignment="Center"
+                            FontFamily="Oswald" FontSize="17" x:Name="GuvenlikS"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                            <Label Text="Güvenlik Cevabı:" VerticalTextAlignment="Center"
+                           FontFamily="Oswald" FontSize="17" x:Name="GuvenlikC"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="2" Spacing="20">
+                            <Entry Placeholder="Güvenlik Sorusu " TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entrySoru"></Entry>
+
+                            <Entry Placeholder="Güvenlik Cevabı " TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entryCevap"></Entry>
+
+                            <Entry Placeholder="Doğrulama Kodu" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entryKod"></Entry>
+                            
+                            <Button Text="Bilgileri Göster" BackgroundColor="#87CEFA" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand"
+                                 x:Name="btnBilgiler" TextColor="#F8F8FF" Clicked="btnBilgiler_Clicked"></Button>
+                        </StackLayout>
+
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

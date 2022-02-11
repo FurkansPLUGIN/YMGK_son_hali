@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Asama2.KayıtVeLogin.Kayıt">
+    
+    <yummy:PancakeView BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="0,1" 
+                                        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   
+                            >
+        <yummy:PancakeView.BackgroundGradientStops>
+            <yummy:GradientStopCollection>
+                <yummy:GradientStop Color="#6495ED	" Offset="0.01" />
+                <yummy:GradientStop Color="#6495ED	" Offset="0.25" />
+                <yummy:GradientStop Color="#6495ED	" Offset="0.5" />
+                <yummy:GradientStop Color="#6495ED	" Offset="1" />
+            </yummy:GradientStopCollection>
+        </yummy:PancakeView.BackgroundGradientStops>
+
+        <Frame BackgroundColor="#0000" x:Name="stackBilgi">
+            <ScrollView>
+                
+           
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+               
+                <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="#0000">
+                    <Label Text="Verilerini Güvende Tutmak için 'Kaydol' !" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Bilbo" FontSize="40"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                </Frame>
+
+                <Frame Grid.Column="0" Grid.Row="1" HasShadow="True" BackgroundColor="#0000" CornerRadius="10">
+                   <StackLayout Spacing="10" >
+                            <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                            <Entry Placeholder="İsim-Soyisim:" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="lblAdSoyad"></Entry>
+                        </Frame>
+
+                            <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True" >
+                            <Entry Placeholder="E-posta:" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="lblPosta"></Entry>
+                        </Frame>
+                            <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                            <Entry Placeholder="Doğum Tarihi:" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="lblDogumT"></Entry>
+                        </Frame>
+                            <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                            <Entry Placeholder="Şifre:" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="lblSifre"></Entry>
+                        </Frame>
+
+                        <Label Text="Lütfen bütün alanları doldurun" TextColor="white"
+                               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               FontAttributes="Bold" FontSize="12" FontFamily="Oswald"></Label>
+
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Column="0" Grid.Row="2" BackgroundColor="#0000">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" >
+
+
+                            <!--     <Frame BackgroundColor="#0000" HorizontalOptions="StartAndExpand" >
+                            <Label Text="Yeni Hesap Aç" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold"
+                               FontSize="20" TextColor="#F8F8FF" FontFamily="Oswald" x:Name="lblYeniHesap">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                                            
+                                        </TapGestureRecognizer>
+                                    </Label.GestureRecognizers>
+                            </Label>
+                        </Frame> -->
+                           
+
+                        <Frame BackgroundColor="#0000" HorizontalOptions="EndAndExpand" >
+                            <Button Text="Kaydol" BackgroundColor="#87CEFA	" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand"
+                                 x:Name="btnKayit" TextColor="#F8F8FF" Clicked="btnKayit_Clicked"></Button>
+                        </Frame>
+                      
+                        
+                        
+                    </StackLayout>
+                </Frame>
+                
+                
+
+            </Grid>
+            </ScrollView>
+        </Frame>
+    </yummy:PancakeView>
+</ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asama2.AnaSayfa.detailBilgi">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#6495ED">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ScrollView>
+                    <StackLayout Margin="30" Spacing="10">
+
+                        <StackLayout Grid.Column="0" Grid.Row="0">
+                            <Label Text="AYRINTILAR" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Oswald" FontSize="30"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                        </StackLayout>
+                        
+                        <StackLayout Grid.Column="0" Grid.Row="1">
+                            <Frame BackgroundColor="#0000" BorderColor="Azure">
+                                <Image x:Name="imgur" Source="{Binding ImageUrl1}" Aspect="AspectFill"
+                   HeightRequest="450" ></Image>
+                                
+                            </Frame>
+
+                            <Label Text="Test" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Oswald" FontSize="15"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+
+                            <Label Text="Test1" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Oswald" FontSize="15"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+
+                        </StackLayout>
+                        <Button Text="Bilgileri Sil" BackgroundColor="#87CEFA" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand"
+                                 x:Name="btnSil" TextColor="#F8F8FF" Clicked="btnSil_Clicked"></Button>
+
+                        <Button Text="Şifreyi Çöz" BackgroundColor="#87CEFA" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand"
+                                 x:Name="btnSifreCoz" TextColor="#F8F8FF" Clicked="btnSifreCoz_Clicked"></Button>
+                        <StackLayout>
+                            
+                        </StackLayout>
+                        
+                    </StackLayout>
+                </ScrollView>
+               
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

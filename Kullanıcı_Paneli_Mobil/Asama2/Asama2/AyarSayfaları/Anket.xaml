@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asama2.AyarSayfaları.Anket">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#6495ED">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <ScrollView >
+                    <StackLayout Margin="30" Spacing="40">
+
+                        <StackLayout Grid.Column="0" Grid.Row="0">
+                            <Label Text="Eleştirilerinize İhtiyacımız Var" TextColor="White" FontSize="20"
+                           FontAttributes="Bold" FontFamily="Oswald" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="1">
+                            <Frame BackgroundColor="#0000" >
+                                <StackLayout>
+                                    <Entry Placeholder="Birinci eleşitirniz:" FontSize="15" FontAttributes="Bold"
+                           TextColor="Black" x:Name="bir"></Entry>
+
+                                    <Entry Placeholder="İkinci eleştiriniz:" FontSize="15" FontAttributes="Bold"
+                           TextColor="Black" x:Name="iki" ></Entry>
+
+                                    <Entry Placeholder="Değiştirilmesini istediğiniz yerler:" FontSize="15" FontAttributes="Bold"
+                           TextColor="Black" x:Name="uc" ></Entry>
+
+
+                                    <Picker Title="Bizi puanlayın" FontSize="15" FontAttributes="Bold"
+                                                x:Name="puanlama" SelectedIndexChanged="puanlama_SelectedIndexChanged"></Picker>
+                                </StackLayout>
+
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="2">
+                            <Button   BackgroundColor="#1E90FF" TextColor="White"
+                            CornerRadius="20" BorderWidth="2" Text="Gönder" 
+                              FontAttributes="Bold" FontSize="17" x:Name="yorumGonder" Clicked="yorumGonder_Clicked"></Button>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="3">
+                            <Label Text="Yorumlarınız için teşekkür ederiz" TextColor="White" FontSize="15"
+                           FontAttributes="Bold" FontFamily="Oswald" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+
+
+                            <Label Text="Ürün ve hizmetlerimizi geliştirebilmemiz için görüş ve önerileriniz bizim için son derece önemlidir. Hizmet ve ürünler ile ilgili görüş/öneri ve şikayetlerinizi lütfen ilgili yerlere yazın."
+                               FontFamily="Oswald" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               TextColor="#F8F8FF" FontSize="13"></Label>
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asama2.AnaSayfa.detail">
+    <NavigationPage.TitleView >
+        <Label TextColor="Black" FontSize="25" FontAttributes="Bold" FontFamily="Bilbo-Swash-Caps" Text="MoonBow"
+             ></Label>
+    </NavigationPage.TitleView>
+
+
+    <StackLayout BackgroundColor="White">
+        <Grid>
+            <ScrollView>
+                <StackLayout>
+
+
+                    <StackLayout>
+                        <ListView x:Name="lstt" ItemsSource="{Binding .}" HasUnevenRows="True" SeparatorVisibility="Default"
+                    ItemTapped="lstt_ItemTapped"
+                       RowHeight="50" >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+
+                                    <ImageCell ImageSource="{Binding ImageUrl1}" Text="Test" Detail="Test1" DetailColor="Black"></ImageCell>
+                                    <!--      <ViewCell>
+                                        <StackLayout>
+
+
+                                            <StackLayout Orientation="Horizontal" >
+                                                <Grid VerticalOptions="FillAndExpand"
+                                                     HorizontalOptions="FillAndExpand">
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition ></RowDefinition>
+                                                        <RowDefinition Height="0.2*"></RowDefinition>
+                                                    </Grid.RowDefinitions>
+
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition ></ColumnDefinition>
+                                                        <ColumnDefinition ></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Image Source="{Binding ImageUrl1}" Grid.Column="0" 
+                                                   Grid.Row="0" HeightRequest="400" ></Image>
+
+                                                   
+                                                   
+                                                </Grid>
+
+
+
+                                            </StackLayout>
+
+
+                                        </StackLayout>
+                                    </ViewCell>
+ -->
+                                 
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                    
+                    
+                    
+                    
+                    
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </StackLayout>
+</ContentPage>

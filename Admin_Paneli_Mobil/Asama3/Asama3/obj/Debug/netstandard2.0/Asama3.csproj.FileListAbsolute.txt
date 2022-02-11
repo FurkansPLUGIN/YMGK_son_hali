@@ -1,0 +1,17 @@
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\Asama3.csprojAssemblyReference.cache
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\GirisSayfası.xaml.g.cs
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\Asama3.AssemblyInfoInputs.cache
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\Asama3.AssemblyInfo.cs
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\Asama3.csproj.CoreCompileInputs.cache
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\Asama3.dll
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\ref\Asama3.dll
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\Asama3.pdb
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\bin\Debug\netstandard2.0\Asama3.deps.json
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\bin\Debug\netstandard2.0\Asama3.dll
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\bin\Debug\netstandard2.0\ref\Asama3.dll
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\bin\Debug\netstandard2.0\Asama3.pdb
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\Asama3.csproj.Fody.CopyLocal.cache
+C:\Users\furka\source\repos\Asama3\Asama3\Asama3\obj\Debug\netstandard2.0\AyrıntıSayfası.xaml.g.cs

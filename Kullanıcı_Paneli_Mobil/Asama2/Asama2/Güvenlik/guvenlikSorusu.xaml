@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Asama2.Güvenlik.guvenlikSorusu">
+    <yummy:PancakeView BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="0,1" 
+                                        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   
+                          >
+        <yummy:PancakeView.BackgroundGradientStops>
+            <yummy:GradientStopCollection>
+                <yummy:GradientStop Color="#6495ED" Offset="0.01" />
+                <yummy:GradientStop Color="#6495ED	" Offset="0.25" />
+                <yummy:GradientStop Color="#6495ED" Offset="0.5" />
+                <yummy:GradientStop Color="#7B68EE" Offset="1" />
+            </yummy:GradientStopCollection>
+        </yummy:PancakeView.BackgroundGradientStops>
+
+        <Frame BackgroundColor="#0000">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <StackLayout Grid.Column="0" Grid.Row="0">
+                    <Label Text="Güvenliginizi saglamamız için son bir adım" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold"
+                               FontSize="40"  FontFamily="Bilbo" TextColor="#F8F8FF"></Label>
+                </StackLayout>
+                
+                <Frame Grid.Column="0" Grid.Row="1" BackgroundColor="#0000">
+                    <StackLayout>
+                        <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                            <Entry Placeholder="Güvenlik sorusu" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0"
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entrSoru"></Entry>
+                        </Frame>
+                        <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                            <Entry Placeholder="Sorunun cevabı" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0"
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entrCevap"></Entry>
+                        </Frame>
+
+                        <Label Text="Lütfen boş alan bırakmayın ve bir soru-cevap belirleyin" TextColor="White" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold" FontFamily="Oswald"></Label>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Column="0" Grid.Row="2" BackgroundColor="#0000">
+                    <StackLayout Spacing="20">
+                        <Button Text="Kaydet" BackgroundColor="#87CEFA" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" TextColor="#F8F8FF"
+                                  x:Name="btnSoruyuKAYDET" Clicked="btnSoruyuKAYDET_Clicked" HeightRequest="80"></Button>
+                        <Label Text="Moon Bow Gizlilik Politikası" TextColor="#C0C0C0" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"  FontFamily="Oswald"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="0" Grid.Row="3" BackgroundColor="#0000">
+                    <StackLayout>
+                        <Label Text="Hizmetimizi kullandığınızda, bilgileriniz açısından bize güvenirsiniz. Bunun büyük bir sorumluluk olduğunu bildiğimizden bilgilerinizi korumak ve bilgilerinizin kontrolünün sizde olmasını sağlamak için büyük çaba harcarız."
+                               FontFamily="Oswald" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               TextColor="#F8F8FF" FontSize="16"></Label> 
+                    </StackLayout> 
+                </Frame>
+            </Grid>
+
+
+        </Frame>
+    </yummy:PancakeView>
+</ContentPage>

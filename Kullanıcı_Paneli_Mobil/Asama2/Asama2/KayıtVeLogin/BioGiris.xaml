@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Asama2.KayıtVeLogin.BioGiris">
+    <yummy:PancakeView BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="0,1" 
+                                        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   
+                           Padding="24"  >
+        <yummy:PancakeView.BackgroundGradientStops>
+            <yummy:GradientStopCollection>
+                <yummy:GradientStop Color="#4169E1" Offset="0.01" />
+                <yummy:GradientStop Color="#4169E1	" Offset="0.25" />
+                <yummy:GradientStop Color="#4169E1	" Offset="0.5" />
+                <yummy:GradientStop Color="#7B68EE" Offset="1" />
+            </yummy:GradientStopCollection>
+        </yummy:PancakeView.BackgroundGradientStops>
+
+        <Frame BackgroundColor="#0000">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.Row="0">
+                    <Label Text="Geleceginize 'Biometrik' bilgilerinizle ışık tutun" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Bilbo" FontSize="38"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1">
+                    
+                    <Frame HasShadow="False" BackgroundColor="#0000">
+                        <lottie:AnimationView x:Name="lottie" Animation="fingerDog.json" 
+                                                  AutoPlay="True"  WidthRequest="150" HeightRequest="150" 
+                                                  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" 
+                                                  />
+
+                    </Frame>
+                </StackLayout>
+
+                <Frame Grid.Column="0" Grid.Row="2" BackgroundColor="#0000">
+                    <StackLayout>
+                        <Button Text="biyometrik Giriş" BackgroundColor="#1E90FF" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" TextColor="#F8F8FF"
+                                  x:Name="btnBioGiris" Clicked="btnBioGiris_Clicked" HeightRequest="80"></Button>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame Grid.Column="0" Grid.Row="3" BackgroundColor="#0000">
+                    
+                    <StackLayout>
+                        <Label Text="UYARI" TextColor="#C0C0C0" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontSize="20" FontFamily="Oswald"></Label>
+                    </StackLayout>
+                    
+                </Frame>
+                <Frame Grid.Column="0" Grid.Row="4" BackgroundColor="#0000">
+                    <StackLayout>
+                        <Label Text="Lütfen cihazınızın uygun olduğuna ve biyometrik giriş alanının kuru olduğuna dikkat edin" FontFamily="Oswald" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               TextColor="#F8F8FF" FontSize="16"></Label>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+
+        </Frame>
+    </yummy:PancakeView>
+</ContentPage>

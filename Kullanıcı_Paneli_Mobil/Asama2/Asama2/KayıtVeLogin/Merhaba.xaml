@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Asama2.KayıtVeLogin.Merhaba">
+
+    <yummy:PancakeView BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="0,1" 
+                                        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"   
+                           Padding="24"  >
+        <yummy:PancakeView.BackgroundGradientStops>
+            <yummy:GradientStopCollection>
+                <yummy:GradientStop Color="#4169E1" Offset="0.01" />
+                <yummy:GradientStop Color="#4169E1	" Offset="0.25" />
+                <yummy:GradientStop Color="#4169E1	" Offset="0.5" />
+                <yummy:GradientStop Color="#7B68EE" Offset="1" />
+            </yummy:GradientStopCollection>
+        </yummy:PancakeView.BackgroundGradientStops>
+
+        <Frame BackgroundColor="#0000">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="MoonBow" FontSize="60" FontAttributes="Bold"
+                           FontFamily="Bilbo-Swash-Caps" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"
+                       TextColor="White"></Label>
+
+
+                <Label Text="presents" FontSize="20" FontAttributes="Bold"
+                           FontFamily="Teko" VerticalTextAlignment="End"
+                           HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"
+                       TextColor="White"></Label>
+            </Grid>
+
+
+        </Frame>
+    </yummy:PancakeView>
+</ContentPage>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asama3.MainPage">
+
+    <StackLayout BackgroundColor="White">
+        <Label TextColor="Black" FontSize="25" FontAttributes="Bold" FontFamily="Oswald" Text="Kullanıcı Bilgileri"
+            VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"></Label>
+
+ 
+        <Grid>
+            <ScrollView>
+                <StackLayout>
+
+                    <Frame  BorderColor="#00BFFF" CornerRadius="20">
+                        <StackLayout>
+                            <ListView x:Name="lstt" ItemsSource="{Binding .}" HasUnevenRows="True" SeparatorVisibility="Default"
+                    
+                       RowHeight="5" >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+
+
+                                        <ViewCell>
+                                            <StackLayout>
+
+                                                
+                                                <StackLayout Orientation="Vertical" Margin="50">
+                                                    <Grid VerticalOptions="FillAndExpand"
+                                                     HorizontalOptions="FillAndExpand">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.1*"></RowDefinition>
+                                                            <RowDefinition Height="0.3*"></RowDefinition>
+                                                        </Grid.RowDefinitions>
+
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                            <ColumnDefinition ></ColumnDefinition>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <!-- <Image Source="{Binding ImageUrl}" Grid.Column="0" 
+                                                   Grid.Row="0" HeightRequest="400" Aspect="AspectFit">
+                                                       
+                                                    </Image> -->
+
+                                                        <Label Text="E- posta: " TextColor="Black" Grid.Column="0" Grid.Row="0"></Label>
+                                                        <Label Text="İsim Soyisim: " TextColor="Black" Grid.Column="0" Grid.Row="1"></Label>
+                                                        <Label Text="Şifre: " TextColor="Black" Grid.Column="0" Grid.Row="2"></Label>
+                                                        <Label Text="Doğrulama Kodu: " TextColor="Black" Grid.Column="0" Grid.Row="3"></Label>
+                                                        <Label Text="Enlem: " TextColor="Black" Grid.Column="0" Grid.Row="4"></Label>
+                                                        <Label Text="Boylam: " TextColor="Black" Grid.Column="0" Grid.Row="5"></Label>
+                                                        <Label Text="Kesinlik: " TextColor="Black" Grid.Column="0" Grid.Row="6"></Label>
+                                                        <Label Text="Yükselti: " TextColor="Black" Grid.Column="0" Grid.Row="7"></Label>
+                                                        <Label Text="Anahtar: " TextColor="Black" Grid.Column="0" Grid.Row="8"></Label>
+                                                        <Label Text="Güvenlik Sorusu: " TextColor="Black" Grid.Column="0" Grid.Row="9"></Label>
+                                                        <Label Text="Güvenlik Cevabı: " TextColor="Black" Grid.Column="0" Grid.Row="10"></Label>
+
+
+                                                        <Label Text="{Binding Posta}" TextColor="Black" Grid.Column="1" Grid.Row="0"></Label>
+                                                        <Label Text="{Binding AdSoyad}" TextColor="Black" Grid.Column="1" Grid.Row="1"></Label>
+                                                        <Label Text="{Binding Sifre}" TextColor="Black" Grid.Column="1" Grid.Row="2"></Label>
+                                                        <Label Text="{Binding DogKodu}" TextColor="Black" Grid.Column="1" Grid.Row="3"></Label>
+                                                        <Label Text="{Binding enlem}" TextColor="Black" Grid.Column="1" Grid.Row="4"></Label>
+                                                        <Label Text="{Binding boylam}" TextColor="Black" Grid.Column="1" Grid.Row="5"></Label>
+                                                        <Label Text="{Binding kesinlik}" TextColor="Black" Grid.Column="1" Grid.Row="6"></Label>
+                                                        <Label Text="{Binding yukselti}" TextColor="Black" Grid.Column="1" Grid.Row="7"></Label>
+                                                        <Label Text="{Binding anahtar}" TextColor="Black" Grid.Column="1" Grid.Row="8"></Label>
+                                                        <Label Text="{Binding GSoru}" TextColor="Black" Grid.Column="1" Grid.Row="9"></Label>
+                                                        <Label Text="{Binding GCevap}" TextColor="Black" Grid.Column="1" Grid.Row="10"></Label>
+
+
+
+
+
+                                                        <Button Text="Ayrıntılar" BackgroundColor="White" CornerRadius="20" 
+                                                            FontFamily="Teko" FontSize="20"  Grid.Row="11" Grid.Column="1"
+                                                            x:Name="btnDosyaBilgileri" TextColor="#00BFFF" HorizontalOptions="StartAndExpand"
+                                                            Clicked="btnDosyaBilgileri_Clicked"></Button>
+
+
+
+                                                    </Grid>
+
+
+
+                                                </StackLayout>
+
+
+                                            </StackLayout>
+                                        </ViewCell>
+
+
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </Frame>
+                   
+                   
+
+
+
+
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asama2.AyarSayfaları.hesabiKaldir">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#6495ED">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <ScrollView>
+                    <StackLayout Margin="30" Spacing="40">
+
+                        <StackLayout Grid.Column="0" Grid.Row="0">
+                            <Label Text="HESABI KALDIR" VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Oswald" FontSize="30"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="1">
+                            
+                            <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                                <Entry Placeholder="Güvenlik Sorusu " TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entrySoru"></Entry>
+                            </Frame>
+
+                            <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                                <Entry Placeholder="Güvenlik Cevabı " TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entryCevap"></Entry>
+                            </Frame>
+
+                            <Frame BackgroundColor="#F8F8FF" BorderColor="#DCDCDC" CornerRadius="20" HasShadow="True">
+                                <Entry Placeholder="Doğrulama Kodu" TextColor="#1c1c1c" PlaceholderColor="#C0C0C0" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="entryKod"></Entry>
+                            </Frame>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="2">
+                            <Button Text="Hesabı Kaldır" BackgroundColor="#87CEFA	" CornerRadius="20"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand"
+                                 x:Name="btnSil" TextColor="#F8F8FF" Clicked="btnSil_Clicked"></Button>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="3">
+                            <Label Text="İstenilen bilgilerinizi girerek hesabınızı kaldırabilirsiniz." VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center" FontFamily="Teko" FontSize="15"
+                           TextColor="#F8F8FF" FontAttributes="Bold" VerticalOptions="StartAndExpand"></Label>
+                        </StackLayout>
+                      
+
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

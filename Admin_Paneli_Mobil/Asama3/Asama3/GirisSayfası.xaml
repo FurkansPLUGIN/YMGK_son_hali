@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asama3.GirisSayfası">
+    <ContentPage.Content BackgroundColor="White">
+        <ScrollView BackgroundColor="White">
+
+
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ScrollView>
+
+
+                    <StackLayout Margin="10">
+
+                        <StackLayout Grid.Column="0" Grid.Row="0">
+                            <Frame BackgroundColor="#0000">
+                                <Label Text="GİRİŞ" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#87CEEB"
+                               FontSize="35"  FontFamily="Oswald" ></Label>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="1">
+                            <Frame HasShadow="False" BackgroundColor="#0000">
+                                <StackLayout>
+
+                                    <Frame BackgroundColor="White" BorderColor="#87CEFA" CornerRadius="20" HasShadow="True" >
+                                        <Entry Placeholder="Kullanıcı Adı:" TextColor="#1c1c1c" PlaceholderColor="#87CEEB" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="lblPosta"></Entry>
+                                    </Frame>
+
+                                    <Frame BackgroundColor="White" BorderColor="#87CEFA" CornerRadius="20" HasShadow="True">
+                                        <Entry Placeholder="Şifre:" TextColor="#1c1c1c" PlaceholderColor="#87CEEB" 
+                               FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Center"
+                               FontFamily="Teko" HorizontalTextAlignment="Start" x:Name="lblSifre" IsPassword="True"></Entry>
+                                    </Frame>
+
+                                    <Label Text="Lütfen Şifrenizi yazın" TextColor="#00468c"
+                               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                               FontAttributes="Bold" FontSize="12" FontFamily="Oswald"></Label>
+
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="2">
+                            <Frame BackgroundColor="#0000" >
+                                <Button Text="Giris" BackgroundColor="#00BFFF	" CornerRadius="20" HeightRequest="80"
+                                FontFamily="Teko" FontSize="20" VerticalOptions="CenterAndExpand" 
+                                 x:Name="btnGiris" TextColor="#F8F8FF" Clicked="btnGiris_Clicked"></Button>
+                            </Frame>
+                            <Label Text="VEYA" TextColor="#C0C0C0" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"  FontFamily="Oswald"></Label>
+                        </StackLayout>
+
+                       
+
+                        <StackLayout Grid.Column="0" Grid.Row="4">
+                            <StackLayout >
+
+                                <Grid VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Frame BackgroundColor="#0000"  Grid.Column="0" Grid.Row="0">
+                                        <Label Text="Yeni Hesap" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#FF1493"
+                               FontSize="15"  FontFamily="Oswald" x:Name="lblHesabıKurtar">
+                                            <Label.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                                            </Label.GestureRecognizers>
+                                        </Label>
+                                    </Frame>
+
+                                    <Frame BackgroundColor="#0000"  Grid.Column="1" Grid.Row="0">
+                                        <Label Text="Hesap Bilgileri" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#87CEEB"
+                               FontSize="15"  FontFamily="Oswald" x:Name="lblHesabAc"></Label>
+                                    </Frame>
+
+                                </Grid>
+
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
